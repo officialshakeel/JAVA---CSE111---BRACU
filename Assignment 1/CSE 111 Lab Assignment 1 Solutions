@@ -1,0 +1,229 @@
+//Task1
+import java.util.Scanner;
+public class Task1{
+public static void main (String[]args){
+  Scanner first = new Scanner(System.in);
+  int user_num1= first.nextInt();
+  int user_num2= first.nextInt();
+  int num1 = 60;
+  int num2 = 40;
+  double num3 = 60.0;
+  double num4 = 40.0;
+  String name = "Shakeel";
+  System.out.println(num1);
+  System.out.println(num1+num2);
+  System.out.println(num1*num2);
+  System.out.println(num1/num2);
+  System.out.println(num3);
+  System.out.println(num3+num4);
+  System.out.println(num3*num4);
+  System.out.println(num3/num4);
+  System.out.println(num1+num4);
+  System.out.println(num1/num4);
+  System.out.println(name);
+  System.out.println(name+num1);
+  System.out.println(num2+name);
+  System.out.println(user_num1);
+  System.out.println(user_num1+user_num2);
+  }
+}
+
+//Task2A
+import java.util.*;
+public class Task2A{
+  public static void main (String[]args){
+    Scanner sc = new Scanner(System.in);
+    int num = 10;
+    int num1 = 20;
+    int num2 = num1;
+    num1 = num;
+    num = num2;
+    System.out.println(num);
+    System.out.println(num1);
+  }
+}
+
+//Task2B
+import java.util.*;
+public class Task2B{
+  public static void main (String[]args){
+    Scanner sc = new Scanner (System.in);
+    int num = 60;
+    int num1 = 40;
+    num = num+num1;
+    num1=num-num1;
+    num=num-num1;
+    System.out.println(num);
+    System.out.println(num1);
+  }
+}
+
+//Task3
+import java.util.*;
+public class Task3{
+  public static void main (String[]args){
+    Scanner task3 = new Scanner(System.in);
+    int id = task3.nextInt();
+    id = id%100;
+    System.out.println(id%10);
+    System.out.println(id/10);
+
+  }
+}
+
+//Task4
+import java.util.*;
+public class Task4{
+  public static void main (String[]args){
+    Scanner task4 = new Scanner (System.in);
+    int n = task4.nextInt();
+    System.out.println(n+"×"+1+" = "+n*1);
+    System.out.println(n+"×"+2+" = "+n*2);
+    System.out.println(n+"×"+3+" = "+n*3);
+    System.out.println(n+"×"+4+" = "+n*4);
+    System.out.println(n+"×"+5+" = "+n*5);
+    System.out.println(n+"×"+6+" = "+n*6);
+    System.out.println(n+"×"+7+" = "+n*7);
+    System.out.println(n+"×"+8+" = "+n*8);
+    System.out.println(n+"×"+9+" = "+n*9);
+    System.out.println(n+"×"+10+" = "+n*10);
+ 
+  }
+}
+
+//Task5
+import java.util.*;
+public class Task5 {
+  public static void main (String[]args){
+    Scanner task5 = new Scanner (System.in);
+    int num1= task5.nextInt();
+        int num2= task5.nextInt();
+            int num3= task5.nextInt();
+            if (num1>num2 && num1>num3){
+              System.out.print("Largest number: "+num1);}
+            else if (num2>num1 && num2>num3){
+              System.out.print("Largest number: "+num2);}
+            else if (num3>num1 && num3>num2){
+              System.out.print("Largest number: "+num3);}
+  }
+
+}
+
+//Task6
+import java.util.*;
+public class Task6{
+  public static void main(String[]args){
+    Scanner task6 = new Scanner (System.in);
+    int year = task6.nextInt();
+    if (year%100==0 && year%400==0){
+      System.out.println(year+" is a leap year");}
+    else if(year%4==0 && year%100!=0){
+    System.out.println(year+" is a leap year");}
+    else{
+    System.out.println(year+" is not a leap year");}
+  }
+}
+
+
+//Task7
+import java.util.*;
+public class Task7{
+  public static void main(String[]args) {
+    Scanner task7 = new Scanner (System.in);
+    int n = task7.nextInt();
+    if (n%5==0 && n%7==0){
+      System.out.println ("Divisible by Both");}
+    else if (n%5==0){
+      System.out.println("Invalid: Divisible by 5 Only");}
+    else if (n%7==0){
+      System.out.println("Invalid: Divisible by 7 Only");}
+    else{
+      System.out.println("No");}
+  }
+}
+
+//Task8
+ import java.util.*;
+ public class Task8{
+   public static void main (String[]args){
+     Scanner task8 = new Scanner (System.in); 
+     int id = task8.nextInt();
+     id = id/100000;
+     if (id%10==1){
+       System.out.println("Student Joined BRAC in Spring "+ id/10);
+     }
+     else if (id%10==2){
+       System.out.println("Student Joined BRAC in Fall "+ id/10);
+     }
+     else if (id%10==3){
+       System.out.println("Student Joined BRAC in Summer "+ id/10);
+     }
+   }
+ }
+
+//Task9
+import java.util.*;
+public class Task9{
+  public static void main (String[]args){
+    Scanner task9 = new Scanner (System.in);
+    System.out.println("Please enter your CGPA = ");
+    double cgpa = task9.nextDouble();
+    System.out.println("Completed number of Credits = ");
+    int credits = task9.nextInt();
+    if ( cgpa<= 3.89 && cgpa>=3.80 && credits>=30){
+      System.out.println("The student is eligible for a waiver of 25 percent ");
+    }
+    else if ( cgpa<= 3.94 && cgpa>=3.90 && credits>=30){
+      System.out.println("The student is eligible for a waiver of 50 percent ");
+    }
+    else if ( cgpa<= 3.99 && cgpa>=3.95 && credits>=30){
+      System.out.println("The student is eligible for a waiver of 75 percent ");
+    }
+    else if ( cgpa== 4.00 && credits>=30){
+      System.out.println("The student is eligible for a waiver of 100 percent ");}
+    else{
+        System.out.println("The student is not eligible for a waiver");}
+    }
+  }
+
+
+//Task10
+import java.util.*;
+public class Task10{
+  public static void main (String[]args){
+    Scanner task10 = new Scanner (System.in);
+    int n = task10.nextInt();
+    if (n%2==0 && n%5==0){
+      System.out.println("Multiple of 2 and 5 both");
+    }
+    else if (n%2==0 || n%5==0){
+      System.out.println(n);
+    }
+    else {
+      System.out.println("Not a multiple we want");
+    }
+  }
+}
+
+//Task11
+
+import java.util.*;
+public class Task11{
+  public static void main (String[]args){
+    Scanner task11 = new Scanner(System.in);
+    int x = task11.nextInt();
+    if (x<0){
+      System.out.println(2*x);
+    }
+    else if (x>=0 && x<2){
+      System.out.println(x+1);
+    }
+    else if (x<5 && x>=2){
+      System.out.println((int)(Math.pow(x,2)-1));
+    }
+    else if (x>=5){
+      System.out.println((int)(3*Math.pow(x,2)+2));
+    }
+  }
+}
+
