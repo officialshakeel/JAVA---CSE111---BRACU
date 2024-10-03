@@ -1,5 +1,7 @@
+    ```java
+
+
 //Task1
-```java
 import java.util.Scanner;
 public class Task1{
 public static void main (String[]args){
@@ -27,7 +29,8 @@ public static void main (String[]args){
   System.out.println(user_num1);
   System.out.println(user_num1+user_num2);
   }
-}```
+}
+
 
 //Task2A
 import java.util.*;
@@ -227,4 +230,4 @@ public class Task11{
     }
   }
 }
-
+    ```
