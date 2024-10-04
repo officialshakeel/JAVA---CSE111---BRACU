@@ -1,6 +1,3 @@
-```java
-
-
 //TASK1 (Finding Palindrome)
 import java.util.Scanner;
 public class task1{
@@ -326,7 +323,6 @@ public class task12{
 
 }}
       
-```
 
 
 
