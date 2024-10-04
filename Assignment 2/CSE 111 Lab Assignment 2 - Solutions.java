@@ -1,5 +1,4 @@
-```java
-////Task1A
+//Task1A
 import java.util.*;
 public class tsk1{
 public static void main (String[]args){
@@ -425,4 +424,4 @@ public class tsk11{
 
 
 
-```
+
