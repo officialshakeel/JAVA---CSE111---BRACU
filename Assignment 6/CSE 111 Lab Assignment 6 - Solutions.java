@@ -1,4 +1,3 @@
-```java
 
 //task1
 
@@ -578,5 +577,3 @@ public void resetMonth()
   String location [] = new String [count];
 }
 }
-
-```
