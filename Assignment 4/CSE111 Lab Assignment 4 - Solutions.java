@@ -1,4 +1,4 @@
-```java
+
 //task1
 
 //a) No
@@ -189,4 +189,3 @@ public class CellPhone
 
 
 
-```
