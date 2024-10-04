@@ -1,4 +1,4 @@
-```java
+
 //task 1
 public class Passenger {
   public static int no_of_passenger;
@@ -208,4 +208,4 @@ public class Dog extends Animal{
     }
 }
 
-```
+
